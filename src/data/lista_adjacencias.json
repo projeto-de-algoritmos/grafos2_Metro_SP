@@ -285,11 +285,11 @@
             "peso": 4
         },
         {
-            "nodo": "Santos-Imigrantes",
+            "nodo": "Santos Imigrantes",
             "peso": 4
         }
     ],
-    "Santos-Imigrantes": [
+    "Santos Imigrantes": [
         {
             "nodo": "Alto do Ipiranga",
             "peso": 4
@@ -301,7 +301,7 @@
     ],
     "Chacara Klabin": [
         {
-            "nodo": "Santos-Imigrantes",
+            "nodo": "Santos Imigrantes",
             "peso": 5
         },
         {
