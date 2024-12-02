@@ -103,7 +103,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>Mapa Interativo das Estações de Metrô</h1>
+      <h1>Mapa Interativo das Estações de Metrô de SP</h1>
       <div className="select-container">
         <div className='column'>
           <label htmlFor="starNode">Origem:</label>
