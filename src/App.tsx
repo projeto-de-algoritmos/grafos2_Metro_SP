@@ -1,11 +1,15 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { DataSet, Network } from 'vis-network/standalone';
 import './App.css';
 import listaAdjacencias from './data/lista_adjacencias.json';
+import { findShortestPath } from './utils';
 
 const App: React.FC = () => {
   const networkRef = useRef<HTMLDivElement>(null);
   const edgesRef = useRef<DataSet<any>>(new DataSet());
+  const [currentStartNode, setCurrentStartNode] = useState('Jabaquara');
+  const [currentEndNode, setCurrentEndNode] = useState('Paulista');
+  const [totalDistance, setTotalDistance] = useState<number | null>(null);
 
   useEffect(() => {
     const nodesArray: { id: string; label: string }[] = [];
@@ -59,70 +63,7 @@ const App: React.FC = () => {
     };
 
     if (networkRef.current) {
-      const network = new Network(networkRef.current, data, options);
-
-      // Implementação do algoritmo de Dijkstra
-      const dijkstra = (graph: any, startNode: string) => {
-        const distances: { [key: string]: number } = {};
-        const visited: { [key: string]: boolean } = {};
-        const previous: { [key: string]: string | null } = {};
-
-        Object.keys(graph).forEach((node) => {
-          distances[node] = Infinity;
-          visited[node] = false;
-          previous[node] = null;
-        });
-
-        distances[startNode] = 0;
-
-        const getClosestNode = () => {
-          let closestNode: string | null = null;
-          let minDistance = Infinity;
-
-          Object.keys(distances).forEach((node) => {
-            if (!visited[node] && distances[node] < minDistance) {
-              closestNode = node;
-              minDistance = distances[node];
-            }
-          });
-
-          return closestNode;
-        };
-
-        let currentNode = getClosestNode();
-
-        while (currentNode) {
-          const distance = distances[currentNode];
-          const neighbors = graph[currentNode];
-
-          neighbors.forEach((neighbor: any) => {
-            const totalDistance = distance + neighbor.peso;
-
-            if (totalDistance < distances[neighbor.nodo]) {
-              distances[neighbor.nodo] = totalDistance;
-              previous[neighbor.nodo] = currentNode;
-            }
-          });
-
-          visited[currentNode] = true;
-          currentNode = getClosestNode();
-        }
-
-        return { distances, previous };
-      };
-
-      const findShortestPath = (startNode: string, endNode: string) => {
-        const { distances, previous } = dijkstra(listaAdjacencias, startNode);
-        const path: string[] = [];
-        let currentNode = endNode;
-
-        while (currentNode) {
-          path.unshift(currentNode);
-          currentNode = previous[currentNode] as string;
-        }
-        console.log("path", path);
-        return path;
-      };
+      new Network(networkRef.current, data, options);
 
       const paintPath = (path: string[], color: string) => {
         console.log("path", path);
@@ -152,16 +93,41 @@ const App: React.FC = () => {
         }
       };
 
-      const startNode = 'Palmeiras-Barra Funda';
-      const endNode = 'Se';
-      const shortestPath = findShortestPath(startNode, endNode);
+      const startNode = currentStartNode;
+      const endNode = currentEndNode;
+      const { path: shortestPath, totalDistance: distance } = findShortestPath(startNode, endNode);
+      setTotalDistance(distance)
       paintPath(shortestPath, 'red');
     }
-  }, []);
+  }, [currentStartNode, currentEndNode]);
 
   return (
     <div className="App">
       <h1>Mapa Interativo das Estações de Metrô</h1>
+      <div className="select-container">
+        <div className='column'>
+          <label htmlFor="starNode">Origem:</label>
+          <select value={currentStartNode} id="startNode" onChange={ev => setCurrentStartNode(ev.target.value)}>
+            {Object.keys(listaAdjacencias).map(item => (
+              <option key={item} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
+        <div className='column'>
+          <label htmlFor="endNode">Destino:</label>
+          <select value={currentEndNode} id="endNode" onChange={(ev) => setCurrentEndNode(ev.target.value)}>
+            {Object.keys(listaAdjacencias).map(item => (
+              <option key={item} value={item}>{item}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+      {totalDistance ? (
+        <div>
+          <p>Distância Total:</p>
+          <p>{totalDistance}</p>
+        </div>  
+      ) : null}
       <div ref={networkRef} style={{ height: '600px', marginBottom: '20px' }}></div>
     </div>
   );
