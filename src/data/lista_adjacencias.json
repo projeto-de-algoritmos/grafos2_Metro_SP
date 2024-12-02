@@ -1,0 +1,870 @@
+{
+    "Jabaquara": [
+        {
+            "nodo": "Conceicao",
+            "peso": 3
+        }
+    ],
+    "Conceicao": [
+        {
+            "nodo": "Jabaquara",
+            "peso": 3
+        },
+        {
+            "nodo": "Sao Judas",
+            "peso": 4
+        }
+    ],
+    "Sao Judas": [
+        {
+            "nodo": "Conceicao",
+            "peso": 4
+        },
+        {
+            "nodo": "Saude",
+            "peso": 4
+        }
+    ],
+    "Saude": [
+        {
+            "nodo": "Sao Judas",
+            "peso": 4
+        },
+        {
+            "nodo": "Praca da Arvore",
+            "peso": 4
+        }
+    ],
+    "Praca da Arvore": [
+        {
+            "nodo": "Saude",
+            "peso": 4
+        },
+        {
+            "nodo": "Santa Cruz",
+            "peso": 6
+        }
+    ],
+    "Santa Cruz": [
+        {
+            "nodo": "Praca da Arvore",
+            "peso": 6
+        },
+        {
+            "nodo": "Vila Mariana",
+            "peso": 6
+        },
+        {
+            "nodo": "Hospital Sao Paulo",
+            "peso": 6
+        },
+        {
+            "nodo": "Chacara Klabin",
+            "peso": 7
+        }
+    ],
+    "Vila Mariana": [
+        {
+            "nodo": "Santa Cruz",
+            "peso": 6
+        },
+        {
+            "nodo": "Ana Rosa",
+            "peso": 5
+        }
+    ],
+    "Ana Rosa": [
+        {
+            "nodo": "Vila Mariana",
+            "peso": 5
+        },
+        {
+            "nodo": "Paraiso",
+            "peso": 6
+        },
+        {
+            "nodo": "Chacara Klabin",
+            "peso": 6
+        }
+    ],
+    "Paraiso": [
+        {
+            "nodo": "Ana Rosa",
+            "peso": 6
+        },
+        {
+            "nodo": "Vergueiro",
+            "peso": 5
+        },
+        {
+            "nodo": "Brigadeiro",
+            "peso": 5
+        }
+    ],
+    "Vergueiro": [
+        {
+            "nodo": "Paraiso",
+            "peso": 5
+        },
+        {
+            "nodo": "Sao Joaquim",
+            "peso": 4
+        }
+    ],
+    "Sao Joaquim": [
+        {
+            "nodo": "Vergueiro",
+            "peso": 4
+        },
+        {
+            "nodo": "Japao-Liberdade",
+            "peso": 4
+        }
+    ],
+    "Japao-Liberdade": [
+        {
+            "nodo": "Sao Joaquim",
+            "peso": 4
+        },
+        {
+            "nodo": "Se",
+            "peso": 6
+        }
+    ],
+    "Se": [
+        {
+            "nodo": "Japao-Liberdade",
+            "peso": 6
+        },
+        {
+            "nodo": "Sao Bento",
+            "peso": 6
+        },
+        {
+            "nodo": "Pedro II",
+            "peso": 6
+        },
+        {
+            "nodo": "Anhangabau",
+            "peso": 6
+        }
+    ],
+    "Sao Bento": [
+        {
+            "nodo": "Se",
+            "peso": 6
+        },
+        {
+            "nodo": "Luz",
+            "peso": 5
+        }
+    ],
+    "Luz": [
+        {
+            "nodo": "Sao Bento",
+            "peso": 5
+        },
+        {
+            "nodo": "Tiradentes",
+            "peso": 5
+        },
+        {
+            "nodo": "Republica",
+            "peso": 7
+        }
+    ],
+    "Tiradentes": [
+        {
+            "nodo": "Luz",
+            "peso": 5
+        },
+        {
+            "nodo": "Armenia",
+            "peso": 4
+        }
+    ],
+    "Armenia": [
+        {
+            "nodo": "Tiradentes",
+            "peso": 4
+        },
+        {
+            "nodo": "Portuguesa-Tiete",
+            "peso": 4
+        }
+    ],
+    "Portuguesa-Tiete": [
+        {
+            "nodo": "Armenia",
+            "peso": 4
+        },
+        {
+            "nodo": "Carandiru",
+            "peso": 4
+        }
+    ],
+    "Carandiru": [
+        {
+            "nodo": "Portuguesa-Tiete",
+            "peso": 4
+        },
+        {
+            "nodo": "Santana",
+            "peso": 4
+        }
+    ],
+    "Santana": [
+        {
+            "nodo": "Carandiru",
+            "peso": 4
+        },
+        {
+            "nodo": "Jardim Sao Paulo-Ayrton Senna",
+            "peso": 4
+        }
+    ],
+    "Jardim Sao Paulo-Ayrton Senna": [
+        {
+            "nodo": "Santana",
+            "peso": 4
+        },
+        {
+            "nodo": "Parada Inglesa",
+            "peso": 4
+        }
+    ],
+    "Parada Inglesa": [
+        {
+            "nodo": "Jardim Sao Paulo-Ayrton Senna",
+            "peso": 4
+        },
+        {
+            "nodo": "Tucuruvi",
+            "peso": 3
+        }
+    ],
+    "Tucuruvi": [
+        {
+            "nodo": "Parada Inglesa",
+            "peso": 3
+        }
+    ],
+    "Vila Prudente": [
+        {
+            "nodo": "Oratorio",
+            "peso": 4
+        },
+        {
+            "nodo": "Tamanduatei",
+            "peso": 4
+        }
+    ],
+    "Tamanduatei": [
+        {
+            "nodo": "Vila Prudente",
+            "peso": 4
+        },
+        {
+            "nodo": "Sacoma",
+            "peso": 4
+        }
+    ],
+    "Sacoma": [
+        {
+            "nodo": "Tamanduatei",
+            "peso": 4
+        },
+        {
+            "nodo": "Alto do Ipiranga",
+            "peso": 4
+        }
+    ],
+    "Alto do Ipiranga": [
+        {
+            "nodo": "Sacoma",
+            "peso": 4
+        },
+        {
+            "nodo": "Santos-Imigrantes",
+            "peso": 4
+        }
+    ],
+    "Santos-Imigrantes": [
+        {
+            "nodo": "Alto do Ipiranga",
+            "peso": 4
+        },
+        {
+            "nodo": "Chacara Klabin",
+            "peso": 5
+        }
+    ],
+    "Chacara Klabin": [
+        {
+            "nodo": "Santos-Imigrantes",
+            "peso": 5
+        },
+        {
+            "nodo": "Ana Rosa",
+            "peso": 6
+        },
+        {
+            "nodo": "Santa Cruz",
+            "peso": 7
+        }
+    ],
+    "Brigadeiro": [
+        {
+            "nodo": "Paraiso",
+            "peso": 5
+        },
+        {
+            "nodo": "Trianon-Masp",
+            "peso": 4
+        }
+    ],
+    "Trianon-Masp": [
+        {
+            "nodo": "Brigadeiro",
+            "peso": 4
+        },
+        {
+            "nodo": "Consolacao",
+            "peso": 4
+        }
+    ],
+    "Consolacao": [
+        {
+            "nodo": "Trianon-Masp",
+            "peso": 4
+        },
+        {
+            "nodo": "Clinicas",
+            "peso": 4
+        }
+    ],
+    "Clinicas": [
+        {
+            "nodo": "Consolacao",
+            "peso": 4
+        },
+        {
+            "nodo": "S. N. Sra. de Fatima-Sumare",
+            "peso": 4
+        }
+    ],
+    "S. N. Sra. de Fatima-Sumare": [
+        {
+            "nodo": "Clinicas",
+            "peso": 4
+        },
+        {
+            "nodo": "Vila Madalena",
+            "peso": 3
+        }
+    ],
+    "Vila Madalena": [
+        {
+            "nodo": "S. N. Sra. de Fatima-Sumare",
+            "peso": 3
+        }
+    ],
+    "Corinthians-Itaquera": [
+        {
+            "nodo": "Artur Alvim",
+            "peso": 3
+        }
+    ],
+    "Artur Alvim": [
+        {
+            "nodo": "Corinthians-Itaquera",
+            "peso": 3
+        },
+        {
+            "nodo": "Patriarca-Vila Re",
+            "peso": 4
+        }
+    ],
+    "Patriarca-Vila Re": [
+        {
+            "nodo": "Artur Alvim",
+            "peso": 4
+        },
+        {
+            "nodo": "Guilhermina-Esperanca",
+            "peso": 4
+        }
+    ],
+    "Guilhermina-Esperanca": [
+        {
+            "nodo": "Patriarca-Vila Re",
+            "peso": 4
+        },
+        {
+            "nodo": "Vila Matilde",
+            "peso": 4
+        }
+    ],
+    "Vila Matilde": [
+        {
+            "nodo": "Guilhermina-Esperanca",
+            "peso": 4
+        },
+        {
+            "nodo": "Penha",
+            "peso": 4
+        }
+    ],
+    "Penha": [
+        {
+            "nodo": "Vila Matilde",
+            "peso": 4
+        },
+        {
+            "nodo": "Carrao-Assai Atacadista",
+            "peso": 4
+        }
+    ],
+    "Carrao-Assai Atacadista": [
+        {
+            "nodo": "Penha",
+            "peso": 4
+        },
+        {
+            "nodo": "Tatuape",
+            "peso": 4
+        }
+    ],
+    "Tatuape": [
+        {
+            "nodo": "Carrao-Assai Atacadista",
+            "peso": 4
+        },
+        {
+            "nodo": "Belem",
+            "peso": 4
+        }
+    ],
+    "Belem": [
+        {
+            "nodo": "Tatuape",
+            "peso": 4
+        },
+        {
+            "nodo": "Bresser-Mooca",
+            "peso": 4
+        }
+    ],
+    "Bresser-Mooca": [
+        {
+            "nodo": "Belem",
+            "peso": 4
+        },
+        {
+            "nodo": "Bras",
+            "peso": 4
+        }
+    ],
+    "Bras": [
+        {
+            "nodo": "Bresser-Mooca",
+            "peso": 4
+        },
+        {
+            "nodo": "Pedro II",
+            "peso": 4
+        }
+    ],
+    "Pedro II": [
+        {
+            "nodo": "Bras",
+            "peso": 4
+        },
+        {
+            "nodo": "Se",
+            "peso": 6
+        }
+    ],
+    "Anhangabau": [
+        {
+            "nodo": "Se",
+            "peso": 6
+        },
+        {
+            "nodo": "Republica",
+            "peso": 6
+        }
+    ],
+    "Republica": [
+        {
+            "nodo": "Anhangabau",
+            "peso": 6
+        },
+        {
+            "nodo": "Santa Cecilia",
+            "peso": 6
+        },
+        {
+            "nodo": "Luz",
+            "peso": 7
+        },
+        {
+            "nodo": "Higienopolis-Mackenzie",
+            "peso": 6
+        }
+    ],
+    "Santa Cecilia": [
+        {
+            "nodo": "Republica",
+            "peso": 6
+        },
+        {
+            "nodo": "Marechal Deodoro",
+            "peso": 4
+        }
+    ],
+    "Marechal Deodoro": [
+        {
+            "nodo": "Santa Cecilia",
+            "peso": 4
+        },
+        {
+            "nodo": "Palmeiras-Barra Funda",
+            "peso": 3
+        }
+    ],
+    "Palmeiras-Barra Funda": [
+        {
+            "nodo": "Marechal Deodoro",
+            "peso": 3
+        }
+    ],
+    "Higienopolis-Mackenzie": [
+        {
+            "nodo": "Republica",
+            "peso": 6
+        },
+        {
+            "nodo": "Paulista",
+            "peso": 4
+        }
+    ],
+    "Paulista": [
+        {
+            "nodo": "Higienopolis-Mackenzie",
+            "peso": 4
+        },
+        {
+            "nodo": "Oscar Freire",
+            "peso": 4
+        }
+    ],
+    "Oscar Freire": [
+        {
+            "nodo": "Paulista",
+            "peso": 4
+        },
+        {
+            "nodo": "Fradique Coutinho",
+            "peso": 4
+        }
+    ],
+    "Fradique Coutinho": [
+        {
+            "nodo": "Oscar Freire",
+            "peso": 4
+        },
+        {
+            "nodo": "Faria Lima",
+            "peso": 4
+        }
+    ],
+    "Faria Lima": [
+        {
+            "nodo": "Fradique Coutinho",
+            "peso": 4
+        },
+        {
+            "nodo": "Pinheiros",
+            "peso": 4
+        }
+    ],
+    "Pinheiros": [
+        {
+            "nodo": "Faria Lima",
+            "peso": 4
+        },
+        {
+            "nodo": "Butanta",
+            "peso": 4
+        }
+    ],
+    "Butanta": [
+        {
+            "nodo": "Pinheiros",
+            "peso": 4
+        },
+        {
+            "nodo": "Sao Paulo-Morumbi",
+            "peso": 4
+        }
+    ],
+    "Sao Paulo-Morumbi": [
+        {
+            "nodo": "Butanta",
+            "peso": 4
+        },
+        {
+            "nodo": "Vila Sonia",
+            "peso": 3
+        }
+    ],
+    "Vila Sonia": [
+        {
+            "nodo": "Sao Paulo-Morumbi",
+            "peso": 3
+        }
+    ],
+    "Capao Redondo": [
+        {
+            "nodo": "Campo Limpo",
+            "peso": 3
+        }
+    ],
+    "Campo Limpo": [
+        {
+            "nodo": "Capao Redondo",
+            "peso": 3
+        },
+        {
+            "nodo": "Vila das Belezas",
+            "peso": 4
+        }
+    ],
+    "Vila das Belezas": [
+        {
+            "nodo": "Campo Limpo",
+            "peso": 4
+        },
+        {
+            "nodo": "Giovanni Gronchi",
+            "peso": 4
+        }
+    ],
+    "Giovanni Gronchi": [
+        {
+            "nodo": "Vila das Belezas",
+            "peso": 4
+        },
+        {
+            "nodo": "Santo Amaro",
+            "peso": 4
+        }
+    ],
+    "Santo Amaro": [
+        {
+            "nodo": "Giovanni Gronchi",
+            "peso": 4
+        },
+        {
+            "nodo": "Largo Treze",
+            "peso": 4
+        }
+    ],
+    "Largo Treze": [
+        {
+            "nodo": "Santo Amaro",
+            "peso": 4
+        },
+        {
+            "nodo": "Adolfo Pinheiro",
+            "peso": 4
+        }
+    ],
+    "Adolfo Pinheiro": [
+        {
+            "nodo": "Largo Treze",
+            "peso": 4
+        },
+        {
+            "nodo": "Alto da Boa Vista",
+            "peso": 4
+        }
+    ],
+    "Alto da Boa Vista": [
+        {
+            "nodo": "Adolfo Pinheiro",
+            "peso": 4
+        },
+        {
+            "nodo": "Borba Gato",
+            "peso": 4
+        }
+    ],
+    "Borba Gato": [
+        {
+            "nodo": "Alto da Boa Vista",
+            "peso": 4
+        },
+        {
+            "nodo": "Brooklin",
+            "peso": 4
+        }
+    ],
+    "Brooklin": [
+        {
+            "nodo": "Borba Gato",
+            "peso": 4
+        },
+        {
+            "nodo": "Campo Belo",
+            "peso": 4
+        }
+    ],
+    "Campo Belo": [
+        {
+            "nodo": "Brooklin",
+            "peso": 4
+        },
+        {
+            "nodo": "Eucaliptos",
+            "peso": 4
+        }
+    ],
+    "Eucaliptos": [
+        {
+            "nodo": "Campo Belo",
+            "peso": 4
+        },
+        {
+            "nodo": "Moema",
+            "peso": 4
+        }
+    ],
+    "Moema": [
+        {
+            "nodo": "Eucaliptos",
+            "peso": 4
+        },
+        {
+            "nodo": "AACD-Servidor",
+            "peso": 4
+        }
+    ],
+    "AACD-Servidor": [
+        {
+            "nodo": "Moema",
+            "peso": 4
+        },
+        {
+            "nodo": "Hospital Sao Paulo",
+            "peso": 4
+        }
+    ],
+    "Hospital Sao Paulo": [
+        {
+            "nodo": "AACD-Servidor",
+            "peso": 4
+        },
+        {
+            "nodo": "Santa Cruz",
+            "peso": 6
+        }
+    ],
+    "Oratorio": [
+        {
+            "nodo": "Vila Prudente",
+            "peso": 4
+        },
+        {
+            "nodo": "Sao Lucas",
+            "peso": 4
+        }
+    ],
+    "Sao Lucas": [
+        {
+            "nodo": "Oratorio",
+            "peso": 4
+        },
+        {
+            "nodo": "Camilo Haddad",
+            "peso": 4
+        }
+    ],
+    "Camilo Haddad": [
+        {
+            "nodo": "Sao Lucas",
+            "peso": 4
+        },
+        {
+            "nodo": "Vila Tolstoi",
+            "peso": 4
+        }
+    ],
+    "Vila Tolstoi": [
+        {
+            "nodo": "Camilo Haddad",
+            "peso": 4
+        },
+        {
+            "nodo": "Vila Uniao",
+            "peso": 4
+        }
+    ],
+    "Vila Uniao": [
+        {
+            "nodo": "Vila Tolstoi",
+            "peso": 4
+        },
+        {
+            "nodo": "Jardim Planalto",
+            "peso": 4
+        }
+    ],
+    "Jardim Planalto": [
+        {
+            "nodo": "Vila Uniao",
+            "peso": 4
+        },
+        {
+            "nodo": "Sapopemba",
+            "peso": 4
+        }
+    ],
+    "Sapopemba": [
+        {
+            "nodo": "Jardim Planalto",
+            "peso": 4
+        },
+        {
+            "nodo": "Fazenda da Juta",
+            "peso": 4
+        }
+    ],
+    "Fazenda da Juta": [
+        {
+            "nodo": "Sapopemba",
+            "peso": 4
+        },
+        {
+            "nodo": "Sao Mateus",
+            "peso": 4
+        }
+    ],
+    "Sao Mateus": [
+        {
+            "nodo": "Fazenda da Juta",
+            "peso": 4
+        },
+        {
+            "nodo": "Jardim Colonial",
+            "peso": 3
+        }
+    ],
+    "Jardim Colonial": [
+        {
+            "nodo": "Sao Mateus",
+            "peso": 3
+        }
+    ]
+}
