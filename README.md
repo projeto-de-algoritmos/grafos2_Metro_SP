@@ -10,6 +10,8 @@
 
 ## Sobre 
 Esse projeto visa aplicar os conceitos de grafos2 ministrados em sala de aula, foi utilizado o algoritmo de dijsktra para calcular o menor caminho entre uma estação de origem e uma de destino. 
+## Video de Apresentação
+[Apresentação](https://youtu.be/jrdyRPqyZ3U)
 
 ## Screenshots
 ![screenshot]('../../src/assets/MapasSPGrafos2.jpeg)
