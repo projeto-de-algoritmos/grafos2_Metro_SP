@@ -103,7 +103,7 @@ const App: React.FC = () => {
         <div className='column'>
           <label htmlFor="starNode">Origem:</label>
           <select value={currentStartNode} id="startNode" onChange={ev => setCurrentStartNode(ev.target.value)}>
-            {Object.keys(listaAdjacencias).map(item => (
+            {Object.keys(listaAdjacencias).sort().map(item => (
               <option key={item} value={item}>{item}</option>
             ))}
           </select>
@@ -111,7 +111,7 @@ const App: React.FC = () => {
         <div className='column'>
           <label htmlFor="endNode">Destino:</label>
           <select value={currentEndNode} id="endNode" onChange={(ev) => setCurrentEndNode(ev.target.value)}>
-            {Object.keys(listaAdjacencias).map(item => (
+            {Object.keys(listaAdjacencias).sort().map(item => (
               <option key={item} value={item}>{item}</option>
             ))}
           </select>
