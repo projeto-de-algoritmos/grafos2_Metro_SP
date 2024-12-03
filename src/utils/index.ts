@@ -59,8 +59,6 @@ export const findShortestPath = (startNode: string, endNode: string) => {
     currentNode = previous[currentNode] as string;
     // totalDistance += distances[currentNode]
   }
-  console.log("path", path);
-  console.log('Distance:', totalDistance)
   return {
     path,
     totalDistance

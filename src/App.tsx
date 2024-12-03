@@ -69,15 +69,11 @@ const App: React.FC = () => {
         console.log("path", path);
         for (let i = 0; i < path.length - 1; i++) {
           const from = path[i];
-          console.log("from:", from);
           const to = path[i + 1];
-          console.log("to:", to);
           const edgeId = `${from}-${to}`;
-          console.log(edgeId);
           const edge = edgesRef.current.get(edgeId);
           if (edge) {
             edgesRef.current.update({ id: edgeId, color: { color } });
-            console.log(edgesRef.current.get(edgeId));
           } else {
             console.error(`Edge not found: ${edgeId}`);
             // Verificar se a aresta reversa existe
@@ -85,7 +81,6 @@ const App: React.FC = () => {
             const reverseEdge = edgesRef.current.get(reverseEdgeId);
             if (reverseEdge) {
               edgesRef.current.update({ id: reverseEdgeId, color: { color } });
-              console.log(edgesRef.current.get(reverseEdgeId));
             } else {
               console.error(`Reverse edge not found: ${reverseEdgeId}`);
             }
